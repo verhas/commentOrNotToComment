@@ -32,6 +32,9 @@ public class StockExchangeOrderUploader implements Runnable {
 				Upload.the(order);
 			}
 		}
+		if( There.isAny(pendingGroup)){
+			Upload.the(pendingGroup);
+		}
 	}
 
 }
